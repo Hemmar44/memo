@@ -13,20 +13,7 @@ $(function(){
 	var sets;
 	$("#stage").text(counter);
 
-	//create 
-	/*
-	$("#creator").on("keyup", "#nameOfTheGame", function(){
-		var value = $(this).val();
-		if(value !=='') {
-			$("#saveName").removeAttr("disabled");
-		}
-		else {
-			$("#saveName").attr("disabled", "disabled");
-		}
-	});
-	*/
-
-	//select game
+	
 
 	$("#selectGame").on("click", "button", function(){
 		var set = $(this).val();
@@ -71,8 +58,7 @@ $(function(){
 			$("#stage").text(counter);
 			$("#name").hide();
 		}
-		//alert(challenge);
-		//$("#points").html("Matches: " + matches);
+		
 		$("#moves").html("Moves: " + moves);
 		$("#score").html("Score: " + score);
 		$("#message").html("");

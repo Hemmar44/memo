@@ -100,8 +100,9 @@ $(function(){
 			success: function( msg ) {
 			var array = [];
 			array = msg.split("||");
-    		$("#table table tbody").html(array[0]);
-    		$("#submitMessage").html(array[1]).show().delay(5000).fadeOut(3000);
+			$("#table").fadeIn();
+    		$("#table table tbody").html(array[0])
+    		$("#submitMessage").html(array[1]).fadeIn().delay(5000).fadeOut(3000);
     		if(array.length < 3) {
 			$("#name").hide();
 			}
